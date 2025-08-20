@@ -3,7 +3,7 @@ import Navbar from './Components/Navbar/Navbar'
 
 const App = () => {
 
-  const current_theme = null;
+  const current_theme = localStorage.getItem('current_theme');
   const [theme, setTheme] = useState(current_theme?
   current_theme : 'light');
 
